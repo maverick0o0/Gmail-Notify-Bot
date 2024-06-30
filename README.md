@@ -15,7 +15,7 @@
 
 The only setup required is to download an OAuth 2.0 Client ID file from Google that will authorize your application.
 
-You can see tutorial video from here.
+You can see tutorial video from toturial folder.
 
 1. Go to https://console.developers.google.com/
 
@@ -54,7 +54,7 @@ Clone this repository:
 python main.py
 ```
 15. Then you have to copy that prompted link, paste in a visual browser and login into Gmail with the authorized account (The account you add in Test users).
-16. After the authorization completed you face with "Unable to connect" page , That's OK just copy the URL and send cURL request to that URL in the server.
+16. After the authorization completed you face with "Unable to connect" page , That's OK just copy the URL and send cURL request to that URL in the server (THE main.py MUST RUNNING DO NOT CLOSE ITS WINDOW , INSTEAD SEND cURL REQUEST IN NEW TERMINAL WINDOW.). After that you must see "gmail_token.json" file.
 ```bash
 curl http://localhost:8080/?code=YOUR_CODE&scope=https://www.googleapis.com/auth/gmail.settings.basic%20https://www.googleapis.com/auth/gmail.modify
 ```
